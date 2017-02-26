@@ -10,14 +10,21 @@ window.onload = function() {
     weekday[6] = "saturday";
 
     var n = d.getDay();
-    hidePreviousDays(n);
+    hidePreviousDays(4);
     
     function hidePreviousDays(currentDayInteger) {
-        if (currentDayInteger!=6) {
-            for (var i=0; i < currentDayInteger; i++) {
-                document.getElementById(weekday[i]).style.display='none';
+        if (window.innerWidth>770) {
+            if (currentDayInteger!=6) {
+                for (var i=0; i < currentDayInteger; i++) {
+                    document.getElementById(weekday[i]).style.display='none';
+                }
+            }
+        } else {
+            for (var i=0; i < 7; i++) {
+                if (i!=currentDayInteger) {
+                    document.getElementById(weekday[i]).style.display='none';
+                }
             }
         }
     }
 }
-
