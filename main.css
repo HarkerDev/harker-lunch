@@ -1,5 +1,6 @@
 html {
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -8,8 +9,13 @@ body {
   padding-bottom: 1em;
 }
 
+h1 {
+  font-weight: 400;
+}
+
 h2 {
   margin-bottom: -.3em;
+  font-weight: 400;
 }
 
 .day {
