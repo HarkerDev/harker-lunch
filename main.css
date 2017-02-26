@@ -1,0 +1,39 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.day {
+  display: flex;
+  flex-direction: row;
+}
+
+.food_station {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 150px;
+}
+
+.course {
+  padding: 10px;
+  border-bottom: 1px solid #CCC;
+}
+
+.veggie {
+  background-color: green;
+}
+
+.gf {
+  background-color: blue;
+}
+
+.veggie_gf {
+  background-color: grey;
+}
+
+@media screen and (max-width: 500px) {
+  .day {
+    flex-direction: column;
+  }
+}

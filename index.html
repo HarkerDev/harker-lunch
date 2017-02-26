@@ -1,439 +1,306 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
+  <title>harker lunch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="script.js"></script>
+</head>
 
-        <title>harker lunch</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="script.js"></script>
-    </head>
+<body>
 
-    <body>
+  <h2>harker lunch</h2>
+  <p>green - vegetarian;<br>blue - gluten free option;<br>grey - both;</p>
 
-        <div class="container">
+  <div id="sunday" class="day">no lunch</div>
 
-            <h2>harker lunch</h2>
-            <p>green - vegetarian;<br>blue - gluten free option;<br>grey - both;</p>
+  <div id="monday">
+    <h2>monday, february 27</h2>
+    <div class="day">
 
-            <!--SUNDAY-->
-            <div id="sunday">no lunch</div>
-            
-            <!--MONDAY-->
-            <div id="monday">
-                <h3>monday, february 27</h3>
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <!--Food Sections-->
-                            <th>International Grill</th>
-                            <th>Veggie Cafe</th>
-                            <th>Carving</th>
-                            <th>Farmers' Market</th>
-                            <th>Chowda House</th>
-                            <th>Regional Italian</th>
-                            <th>Fresh Mex</th>
-                            <th>Healthy Choice</th>
-                            <th>Creative Deli Special</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <!--International Grill Dish 1-->
-                            <td class="info">Garlic Pepper Turkey Burgers on 9 Grain Buns</td>
-                            <!--Veggie Cafe Dish 1-->
-                            <td>Veggie Burgers</td>
-                            <!--Carving Dish 1-->
-                            <td class="info">Pineapple Glazed Ham with Hawaiian Rolls</td>
-                            <!--Farmers' Market Dish 1-->
-                            <td>Greek Chickpea Salad</td>
-                            <!--Chowda House Dish 1-->
-                            <td>Clam Chowda in a Bread Bowl</td>
-                            <!--Regional Italian Dish 1-->
-                            <td class="success">Butternut Squash Ravioli with Brown Butter & Sage</td>
-                            <!--Fresh Mex Dish 1-->
-                            <td>Pollo Loco</td>
-                            <!--Healthy Choice Dish 1-->
-                            <td class="info">Smoked Salmon & Cucumber Rolls with Micro Greens</td>
-                            <!--Creative Deli Special Dish 1-->
-                            <td class="active">Fresh Veggie Platter</td>
-                        </tr>
-                        <tr>
-                            <!--International Grill Dish 2-->
-                            <td>Roasted Sweet Potato Wedges</td>
-                            <!--Veggie Cafe Dish 2-->
-                            <td></td>
-                            <!--Carving Dish 2-->
-                            <td></td>
-                            <!--Farmers' Market Dish 2-->
-                            <td>Raw Broccoli & Cheddar Salad</td>
-                            <!--Chowda House Dish 2-->
-                            <td></td>
-                            <!--Regional Italian Dish 2-->
-                            <td></td>
-                            <!--Fresh Mex Dish 2-->
-                            <td class="success">Wet Burritos</td>
-                            <!--Healthy Choice Dish 2-->
-                            <td></td>
-                            <!--Creative Deli Special Dish 2-->
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <!--International Grill Dish 3-->
-                            <td>All the Fixings</td>
-                            <!--Veggie Cafe Dish 3-->
-                            <td></td>
-                            <!--Carving Dish 3-->
-                            <td></td>
-                            <!--Farmers' Market Dish 3-->
-                            <td></td>
-                            <!--Chowda House Dish 3-->
-                            <td></td>
-                            <!--Regional Italian Dish 3-->
-                            <td></td>
-                            <!--Fresh Mex Dish 3-->
-                            <td></td>
-                            <!--Healthy Choice Dish 3-->
-                            <td></td>
-                            <!--Creative Deli Special Dish 3-->
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <div class="food_station">
+        <h3>International Grill</h3>
+        <div class="course gf">Garlic Pepper Turkey Burgers on 9 Grain Buns</div>
+        <div class="course">Roasted Sweet Potato Wedges</div>
+        <div class="course">All the Fixings</div>
+      </div>
 
-            <!--TUESDAY-->
-            <div id="tuesday">
-                <h3>tuesday, february 28</h3>
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <!--Food Sections-->
-                            <th>International Grill</th>
-                            <th>Veggie Cafe</th>
-                            <th>Bistro</th>
-                            <th>Farmers' Market</th>
-                            <th>Chowda House</th>
-                            <th>Regional Italian</th>
-                            <th>Fresh Mex</th>
-                            <th>Healthy Choice</th>
-                            <th>Creative Deli Special</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <!--International Grill Dish 1-->
-                            <td class="info">Tandoori Marinated Chicken Thighs</td>
-                            <!--Veggie Cafe Dish 1-->
-                            <td class="success">Potato Samosas with Mint & Mango Chutney</td>
-                            <!--Bistro Dish 1-->
-                            <td class="info">Assorted Sushi</td>
-                            <!--Farmers' Market Dish 1-->
-                            <td>Spinach Bacon Potato Salad</td>
-                            <!--Chowda House Dish 1-->
-                            <td>Coconut Shrimp with Sweet Chili Sauce</td>
-                            <!--Regional Italian Dish 1-->
-                            <td>Sausage and Kale Whole Wheat Baked Pasta</td>
-                            <!--Fresh Mex Dish 1-->
-                            <td>Tacos Al Pastor</td>
-                            <!--Healthy Choice Dish 1-->
-                            <td class="success">Avocado Bruschetta on Whole Wheat Crostini</td>
-                            <!--Creative Deli Special Dish 1-->
-                            <td>Turkey, Bacon Avocado on Kaiser Roll</td>
-                        </tr>
-                        <tr>
-                            <!--International Grill Dish 2-->
-                            <td>Wild Rice Pilaf</td>
-                            <!--Veggie Cafe Dish 2-->
-                            <td></td>
-                            <!--Bistro Dish 2-->
-                            <td></td>
-                            <!--Farmers' Market Dish 2-->
-                            <td>Deviled Eggs</td>
-                            <!--Chowda House Dish 2-->
-                            <td></td>
-                            <!--Regional Italian Dish 2-->
-                            <td></td>
-                            <!--Fresh Mex Dish 2-->
-                            <td class="success">Taquitos</td>
-                            <!--Healthy Choice Dish 2-->
-                            <td></td>
-                            <!--Creative Deli Special Dish 2-->
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <!--International Grill Dish 3-->
-                            <td>Curry Roasted Cauliflower & Broccoli</td>
-                            <!--Veggie Cafe Dish 3-->
-                            <td></td>
-                            <!--Bistro Dish 3-->
-                            <td></td>
-                            <!--Farmers' Market Dish 3-->
-                            <td></td>
-                            <!--Chowda House Dish 3-->
-                            <td></td>
-                            <!--Regional Italian Dish 3-->
-                            <td></td>
-                            <!--Fresh Mex Dish 3-->
-                            <td></td>
-                            <!--Healthy Choice Dish 3-->
-                            <td></td>
-                            <!--Creative Deli Special Dish 3-->
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <div class="food_station">
+        <h3>Veggie Cafe</h3>
+        <div class="course">Veggie Burgers</div>
+      </div>
 
-            <!--WEDNESDAY-->
-            <div id="wednesday">
-                <h3>wednesday, march 1</h3>
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <!--Food Sections-->
-                            <th>International Grill</th>
-                            <th>Veggie Cafe</th>
-                            <th>Carving</th>
-                            <th>Farmers' Market</th>
-                            <th>Chowda House</th>
-                            <th>Regional Italian</th>
-                            <th>Fresh Mex</th>
-                            <th>Healthy Choice</th>
-                            <th>Creative Deli Special</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <!--International Grill Dish 1-->
-                            <td>Italian Beef Meatloaf with Béchamel Sauce</td>
-                            <!--Veggie Cafe Dish 1-->
-                            <td class="success">Eggplant Roulades & Bread Sticks</td>
-                            <!--Carving Dish 1-->
-                            <td class="info">BBQ Roasted Bone-in Chicken Pieces</td>
-                            <!--Farmers' Market Dish 1-->
-                            <td>Spring Pea Salad with Feta Cheese & Herbs</td>
-                            <!--Chowda House Dish 1-->
-                            <td>Newhattan Chowda with Grilled Bread</td>
-                            <!--Regional Italian Dish 1-->
-                            <td class="success">Cheese Tortellini with Creamy Pesto</td>
-                            <!--Fresh Mex Dish 1-->
-                            <td>Beef Chile Colorado</td>
-                            <!--Healthy Choice Dish 1-->
-                            <td class="active">Roasted Garlic Pesto Hummus</td>
-                            <!--Creative Deli Special Dish 1-->
-                            <td class="success">Bagels with Pesto Cream Cheese</td>
-                        </tr>
-                        <tr>
-                            <!--International Grill Dish 2-->
-                            <td>Parmesan Orzo Pasta</td>
-                            <!--Veggie Cafe Dish 2-->
-                            <td></td>
-                            <!--Carving Dish 2-->
-                            <td></td>
-                            <!--Farmers' Market Dish 2-->
-                            <td>Bruschetta with Crostini</td>
-                            <!--Chowda House Dish 2-->
-                            <td></td>
-                            <!--Regional Italian Dish 2-->
-                            <td></td>
-                            <!--Fresh Mex Dish 2-->
-                            <td class="success">Mexican Corn on the Cob</td>
-                            <!--Healthy Choice Dish 2-->
-                            <td class="active">Fresh Veggies</td>
-                            <!--Creative Deli Special Dish 2-->
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <!--International Grill Dish 3-->
-                            <td>Sautéed Spinach</td>
-                            <!--Veggie Cafe Dish 3-->
-                            <td></td>
-                            <!--Carving Dish 3-->
-                            <td></td>
-                            <!--Farmers' Market Dish 3-->
-                            <td></td>
-                            <!--Chowda House Dish 3-->
-                            <td></td>
-                            <!--Regional Italian Dish 3-->
-                            <td></td>
-                            <!--Fresh Mex Dish 3-->
-                            <td></td>
-                            <!--Healthy Choice Dish 3-->
-                            <td></td>
-                            <!--Creative Deli Special Dish 3-->
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <div class="food_station">
+        <h3>Carving</h3>
+        <div class="course gf">Pineapple Glazed Ham with Hawaiian Rolls</div>
+      </div>
 
-            <!--THURSDAY-->
-            <div id="thursday">
-                <h3>thursday, march 2</h3>
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <!--Food Sections-->
-                            <th>International Grill</th>
-                            <th>Veggie Cafe</th>
-                            <th>Bistro</th>
-                            <th>Farmers' Market</th>
-                            <th>Chowda House</th>
-                            <th>Regional Italian</th>
-                            <th>Fresh Mex</th>
-                            <th>Healthy Choice</th>
-                            <th>Creative Deli Special</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <!--International Grill Dish 1-->
-                            <td class="info">Rosemary Pork Tenderloin with Apricot Sauce</td>
-                            <!--Veggie Cafe Dish 1-->
-                            <td class="success">Potato & Leek Quiche</td>
-                            <!--Bistro Dish 1-->
-                            <td>Chicken and Dumplings</td>
-                            <!--Farmers' Market Dish 1-->
-                            <td>Buffalo Chicken Pasta Salad</td>
-                            <!--Chowda House Dish 1-->
-                            <td>White Fish Wrapped in Bacon</td>
-                            <!--Regional Italian Dish 1-->
-                            <td>Braise Beef Ravioli with Alfredo</td>
-                            <!--Fresh Mex Dish 1-->
-                            <td>Chicken Fajitas</td>
-                            <!--Healthy Choice Dish 1-->
-                            <td class="active">Melon, Cucumber & Mango Skewers with Chile & Lime</td>
-                            <!--Creative Deli Special Dish 1-->
-                            <td>Meatball Sliders</td>
-                        </tr>
-                        <tr>
-                            <!--International Grill Dish 2-->
-                            <td>Salt N Pepper Roasted Potatoes</td>
-                            <!--Veggie Cafe Dish 2-->
-                            <td></td>
-                            <!--Bistro Dish 2-->
-                            <td></td>
-                            <!--Farmers' Market Dish 2-->
-                            <td>Grilled Peach Salad with Kale & Goat Cheese</td>
-                            <!--Chowda House Dish 2-->
-                            <td></td>
-                            <!--Regional Italian Dish 2-->
-                            <td></td>
-                            <!--Fresh Mex Dish 2-->
-                            <td class="success">Cheese Quesadillas</td>
-                            <!--Healthy Choice Dish 2-->
-                            <td>Fresh Veggies</td>
-                            <!--Creative Deli Special Dish 2-->
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <!--International Grill Dish 3-->
-                            <td>Honey Glazed Baby Carrots</td>
-                            <!--Veggie Cafe Dish 3-->
-                            <td></td>
-                            <!--Bistro Dish 3-->
-                            <td></td>
-                            <!--Farmers' Market Dish 3-->
-                            <td></td>
-                            <!--Chowda House Dish 3-->
-                            <td></td>
-                            <!--Regional Italian Dish 3-->
-                            <td></td>
-                            <!--Fresh Mex Dish 3-->
-                            <td></td>
-                            <!--Healthy Choice Dish 3-->
-                            <td></td>
-                            <!--Creative Deli Special Dish 3-->
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <div class="food_station">
+        <h3>Farmers' Market</h3>
+        <div class="course">Greek Chickpea Salad</div>
+        <div class="course">Raw Broccoli & Cheddar Salad</div>
+      </div>
 
-            <!--FRIDAY-->
-            <div id="friday">
-                <h3>friday, march 3</h3>
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <!--Food Sections-->
-                            <th>International Grill</th>
-                            <th>Veggie Cafe</th>
-                            <th>Carving</th>
-                            <th>Farmers' Market</th>
-                            <th>Chowda House</th>
-                            <th>Regional Italian</th>
-                            <th>Fresh Mex</th>
-                            <th>Healthy Choice</th>
-                            <th>Creative Deli Special</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <!--International Grill Dish 1-->
-                            <td>Chinese Grilled Chicken Salad with Sesame</td>
-                            <!--Veggie Cafe Dish 1-->
-                            <td class="active">Gluten Free Veggie Fried</td>
-                            <!--Carving Dish 1-->
-                            <td class="info">Slow Cooked Roast Beef with Creamy Horseradish</td>
-                            <!--Farmers' Market Dish 1-->
-                            <td>Apple & Walnut Waldorf Salad</td>
-                            <!--Chowda House Dish 1-->
-                            <td>Shrimp Scampi with Wild Rice Pilaf</td>
-                            <!--Regional Italian Dish 1-->
-                            <td class="success">Baked Cheese Stuffed Shells</td>
-                            <!--Fresh Mex Dish 1-->
-                            <td>Seafood Chilequilles Verde</td>
-                            <!--Healthy Choice Dish 1-->
-                            <td class="success">Spinach & Artichoke Stuffed Mushrooms</td>
-                            <!--Creative Deli Special Dish 1-->
-                            <td class="success">Soy Butter & Banana</td>
-                        </tr>
-                        <tr>
-                            <!--International Grill Dish 2-->
-                            <td>Dressing and Crispy Wontons</td>
-                            <!--Veggie Cafe Dish 2-->
-                            <td></td>
-                            <!--Carving Dish 2-->
-                            <td></td>
-                            <!--Farmers' Market Dish 2-->
-                            <td>Grilled Cauliflower Steaks</td>
-                            <!--Chowda House Dish 2-->
-                            <td></td>
-                            <!--Regional Italian Dish 2-->
-                            <td></td>
-                            <!--Fresh Mex Dish 2-->
-                            <td class="success">Cheese Empanadas</td>
-                            <!--Healthy Choice Dish 2-->
-                            <td>Fresh Veggies</td>
-                            <!--Creative Deli Special Dish 2-->
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <!--SATURDAY-->
-            <div id="saturday">no lunch</div>
-            
-        </div>
+      <div class="food_station">
+        <h3>Chowda House</h3>
+        <div class="course">Clam Chowda in a Bread Bowl</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Regional Italian</h3>
+        <div class="course veggie">Butternut Squash Ravioli with Brown Butter & Sage</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Fresh Mex</h3>
+        <div class="course">Pollo Loco</div>
+        <div class="course veggie">Wet Burritos</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Healthy Choice</h3>
+        <div class="course gf">Smoked Salmon & Cucumber Rolls with Micro Greens</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Creative Deli Special</h3>
+        <div class="course veggie_gf">Fresh Veggie Platter</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="tuesday">
+    <h2>tuesday, february 28</h2>
+    <div class="day">
+
+      <div class="food_station">
+        <h3>International Grill</h3>
+        <div class="course gf">Tandoori Marinated Chicken Thighs</div>
+        <div class="course">Wild Rice Pilaf</div>
+        <div class="course">Curry Roasted Cauliflower & Broccoli</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Veggie Cafe</h3>
+        <div class="course veggie">Potato Samosas with Mint & Mango Chutney</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Bistro</h3>
+        <div class="course gf">Assorted Sushi</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Farmers' Market</h3>
+        <div class="course">Spinach Bacon Potato Salad</div>
+        <div class="course">Deviled Eggs</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Chowda House</h3>
+        <div class="course">Coconut Shrimp with Sweet Chili Sauce</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Regional Italian</h3>
+        <div class="course">Sausage and Kale Whole Wheat Baked Pasta</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Fresh Mex</h3>
+        <div class="course">Tacos Al Pastor	</div>
+        <div class="course veggie">Taquitos</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Healthy Choice</h3>
+        <div class="course veggie">Avocado Bruschetta on Whole Wheat Crostini</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Creative Deli Special</h3>
+        <div class="course">Turkey, Bacon Avocado on Kaiser Roll</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="wednesday">
+    <h2>wednesday, march 1</h2>
+    <div class="day">
+
+      <div class="food_station">
+        <h3>International Grill</h3>
+        <div class="course">Italian Beef Meatloaf with Béchamel Sauce</div>
+        <div class="course">Parmesan Orzo Pasta</div>
+        <div class="course">Sautéed Spinach</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Veggie Cafe</h3>
+        <div class="course veggie">Eggplant Roulades & Bread Sticks</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Carving</h3>
+        <div class="course gf">BBQ Roasted Bone-in Chicken Pieces</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Farmers' Market</h3>
+        <div class="course">Spring Pea Salad with Feta Cheese & Herbs</div>
+        <div class="course">Bruschetta with Crostini</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Chowda House</h3>
+        <div class="course">Newhattan Chowda with Grilled Bread</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Regional Italian</h3>
+        <div class="course veggie">Cheese Tortellini with Creamy Pesto</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Fresh Mex</h3>
+        <div class="course">Beef Chile Colorado</div>
+        <div class="course veggie">Mexican Corn on the Cob</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Healthy Choice</h3>
+        <div class="course veggie_gf">Roasted Garlic Pesto Hummus</div>
+        <div class="course veggie_gf">Fresh Veggies</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Creative Deli Special</h3>
+        <div class="course veggie">Bagels with Pesto Cream Cheese</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="thursday">
+    <h2>thursday, march 2</h2>
+    <div class="day">
+
+      <div class="food_station">
+        <h3>International Grill</h3>
+        <div class="course gf">Rosemary Pork Tenderloin with Apricot Sauce</div>
+        <div class="course">Salt N Pepper Roasted Potatoes</div>
+        <div class="course">Honey Glazed Baby Carrots</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Veggie Cafe</h3>
+        <div class="course veggie">Potato & Leek Quiche</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Bistro</h3>
+        <div class="course">Chicken and Dumplings</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Farmers' Market</h3>
+        <div class="course">Buffalo Chicken Pasta Salad</div>
+        <div class="course">Grilled Peach Salad with Kale & Goat Cheese</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Chowda House</h3>
+        <div class="course">White Fish Wrapped in Bacon</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Regional Italian</h3>
+        <div class="course">Braise Beef Ravioli with Alfredo</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Fresh Mex</h3>
+        <div class="course">Chicken Fajitas</div>
+        <div class="course veggie">Cheese Quesadillas</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Healthy Choice</h3>
+        <div class="course veggie_gf">Melon, Cucumber & Mango Skewers with Chile & Lime</div>
+        <div class="course">Fresh Veggies</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Creative Deli Special</h3>
+        <div class="course">Meatball Sliders</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="friday">
+    <h2>friday, march 3</h2>
+    <div class="day">
+
+      <div class="food_station">
+        <h3>International Grill</h3>
+        <div class="course">Chinese Grilled Chicken Salad with Sesame</div>
+        <div class="course">Dressing and Crispy Wontons</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Veggie Cafe</h3>
+        <div class="course veggie_gf">Gluten Free Veggie Fried</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Carving</h3>
+        <div class="course gf">Slow Cooked Roast Beef with Creamy Horseradish</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Farmers' Market</h3>
+        <div class="course">Apple & Walnut Waldorf Salad</div>
+        <div class="course">Grilled Cauliflower Steaks</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Chowda House</h3>
+        <div class="course">Shrimp Scampi with Wild Rice Pilaf</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Regional Italian</h3>
+        <div class="course veggie">Baked Cheese Stuffed Shells</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Fresh Mex</h3>
+        <div class="course">Seafood Chilequilles Verde</div>
+        <div class="course veggie">Cheese Empanadas</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Healthy Choice</h3>
+        <div class="course veggie">Spinach & Artichoke Stuffed Mushrooms</div>
+        <div class="course">Fresh Veggies</div>
+      </div>
+
+      <div class="food_station">
+        <h3>Creative Deli Special</h3>
+        <div class="course veggie">Soy Butter & Banana</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="saturday" class="day">no lunch</div>
+
+</body>
 
 
-    </body>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-92633818-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-    
 </html>
