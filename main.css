@@ -1,6 +1,15 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+h2 {
+  margin-bottom: -.3em;
 }
 
 .day {
@@ -17,23 +26,42 @@ body {
 
 .course {
   padding: 10px;
-  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
 }
 
 .veggie {
-  background-color: green;
+  background-color: #a5ffb7;
 }
 
 .gf {
-  background-color: blue;
+  background-color: #a5c7ff;
 }
 
 .veggie_gf {
-  background-color: grey;
+  background-color: #c1c1c1;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1046px) {
+  body {
+    width:100%;
+    text-align: center;
+  }
+
+  h2 {
+    padding-top: .5em;
+    padding-bottom: 1em;
+  }
+
   .day {
     flex-direction: column;
+    text-align: center;
   }
+
+  .food_station {
+    margin-left:auto;
+        margin-right:auto;
+        width:90%;
+        max-width: 300px;
+  }
+
 }
