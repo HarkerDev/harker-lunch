@@ -13,7 +13,7 @@ window.onload = function() {
     hidePreviousDays(n);
 
     function hidePreviousDays(currentDayInteger) {
-        if (window.innerWidth>770) { //desktop
+        if (window.innerWidth>1046) { //desktop
             document.getElementById("saturday").style.display='none';
             document.getElementById("sunday").style.display='none';
             if (currentDayInteger!=6) {
