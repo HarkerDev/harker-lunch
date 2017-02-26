@@ -14,6 +14,8 @@ window.onload = function() {
     
     function hidePreviousDays(currentDayInteger) {
         if (window.innerWidth>770) { //desktop
+            document.getElementById("saturday").style.display='none';
+            document.getElementById("sunday").style.display='none';
             if (currentDayInteger!=6) {
                 for (var i=0; i < currentDayInteger; i++) {
                     document.getElementById(weekday[i]).style.display='none';
@@ -27,7 +29,7 @@ window.onload = function() {
             }
             if (currentDayInteger==6||currentDayInteger==7) {
                 var div = document.getElementById(weekday[currentDayInteger]);
-                div.innerHTML = div.innerHTML + 'no lunch';
+                //div.innerHTML = div.innerHTML + 'no lunch';
             }
         }
     }
