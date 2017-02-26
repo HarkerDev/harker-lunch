@@ -10,20 +10,24 @@ window.onload = function() {
     weekday[6] = "saturday";
 
     var n = d.getDay();
-    hidePreviousDays(4);
+    hidePreviousDays(n);
     
     function hidePreviousDays(currentDayInteger) {
-        if (window.innerWidth>770) {
+        if (window.innerWidth>770) { //desktop
             if (currentDayInteger!=6) {
                 for (var i=0; i < currentDayInteger; i++) {
                     document.getElementById(weekday[i]).style.display='none';
                 }
             }
-        } else {
+        } else { //mobile
             for (var i=0; i < 7; i++) {
                 if (i!=currentDayInteger) {
                     document.getElementById(weekday[i]).style.display='none';
                 }
+            }
+            if (currentDayInteger==6||currentDayInteger==7) {
+                var div = document.getElementById(weekday[currentDayInteger]);
+                div.innerHTML = div.innerHTML + 'no lunch';
             }
         }
     }
