@@ -10,7 +10,7 @@ window.onload = function() {
     weekday[6] = "saturday";
 
     var n = d.getDay();
-    hidePreviousDays(1);
+    hidePreviousDays(n);
 
     function hidePreviousDays(currentDayInteger) {
         if (window.innerWidth>1046) { //desktop
