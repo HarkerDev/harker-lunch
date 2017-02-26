@@ -27,10 +27,6 @@ window.onload = function() {
                     document.getElementById(weekday[i]).style.display='none';
                 }
             }
-            if (currentDayInteger==6||currentDayInteger==7) {
-                var div = document.getElementById(weekday[currentDayInteger]);
-                //div.innerHTML = div.innerHTML + 'no lunch';
-            }
         }
     }
 }
