@@ -26,10 +26,8 @@ window.onload = function() {
                 }
             }
             if (currentDayInteger==6||currentDayInteger==7) {
-                var p = document.createElement("P");
-                var t = document.createTextNode("no lunch");
-                p.appendChild(t);
-                document.body.appendChild(p);
+                var div = document.getElementById(weekday[currentDayInteger]);
+                div.innerHTML = div.innerHTML + 'no lunch';
             }
         }
     }
