@@ -18,6 +18,10 @@ h2 {
   font-weight: 400;
 }
 
+.place {
+  height: 3em;
+}
+
 .day {
   display: flex;
   flex-direction: row;
