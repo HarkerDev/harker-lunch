@@ -6,16 +6,13 @@ html {
 body {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
+    padding-top: 1em;
 }
 
-h1 {
+h1, h2 {
   font-weight: 400;
-}
-
-h2 {
-  margin-bottom: -.1em;
-  font-weight: 400;
+    margin-bottom: -.1em;
 }
 
 .day {
