@@ -14,12 +14,8 @@ h1 {
 }
 
 h2 {
-  margin-bottom: -.3em;
+  margin-bottom: -.1em;
   font-weight: 400;
-}
-
-.place {
-  height: 3em;
 }
 
 .day {
@@ -51,7 +47,16 @@ h2 {
   background-color: #c1c1c1;
 }
 
+@media screen and (min-width: 1046px) {
+    
+.place {
+  height: 1.5em;
+}
+
+}
+
 @media screen and (max-width: 1046px) {
+    
   body {
     width:100%;
     text-align: center;
