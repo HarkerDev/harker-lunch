@@ -23,6 +23,12 @@ h2 {
   flex-direction: row;
 }
 
+#key p{
+    display: inline-block;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
 .food_station {
   display: flex;
   flex-direction: column;
@@ -35,6 +41,7 @@ h2 {
   border-top: 1px solid #CCC;
 }
 
+/*COLOR CODING*/
 .veggie {
   background-color: #a5ffb7;
 }
@@ -47,6 +54,7 @@ h2 {
   background-color: #c1c1c1;
 }
 
+/*RESPONSIVE DESIGN*/
 @media screen and (min-width: 1046px) {
     
 .place {
