@@ -1,28 +1,18 @@
 # harker-lunch :fries::curry::rice::meat_on_bone::hamburger::spaghetti::sushi::fried_shrimp:
 
-A simple web application for Harker students to check what's for lunch.
+A simple web application for Harker students to check whats for lunch.
 
 ## Usage
 
-Go to [the Github IO page](http://aggarwalneeraj141.github.io/harker-lunch/) to access the schedule, or [tiny.cc/lunchmenu](tiny.cc/lunchmenu).
+Go to [the Github IO page](http://aggarwalneeraj141.github.io/harker-lunch/) to access the schedule, or [tiny.cc/lunchmenu](https://tiny.cc/lunchmenu).
 
-## Features
+## How it works
 
-- Bootstrap tables for easy formatting and control
-- Automatically hides previous days in the week
+- Will render each dish for each food station in columns, and stack the columns upon mobile window.
+- Automatically hides previous days in the week by hiding the div for the respective day
 
 ## Key
 
 In the provided menu by Harker, certain dishes are marked to be vegetarian, gluten-free, or both.
 
-We display this information to the user by coloring table cells for dishes. The bootstrap default classes `.success`, `.info`, and `.active` are used to provide a simple color key for the user to identify the dishes respectively.
-
-## Authors
-Neeraj Aggarwal<br/>
-Patrick Zhong
-
-## In Progress
-Automatic updates every Saturday
-
-## Next Up
-Machine learning algorithms to predict the number of memes that can be found in the average Harker chocolate chip coookie.
+We use this information to show to the user, by showing color in the table cell for the dish. The classes `.veggie`, `.gf`, and `.veggie_gf` are used to provide a simple color key for the user to identify the dishes respectively.
