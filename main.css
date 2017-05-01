@@ -54,6 +54,10 @@ a {
   background-color: #c1c1c1;
 }
 
+.closed {
+    background-color: #ed5c5c;
+}
+
 /*RESPONSIVE DESIGN*/
 @media screen and (min-width: 1046px) {
     
