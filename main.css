@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  width: 90%;
+  width: 94%;
   margin: 0 auto;
   padding-bottom: 2em;
   padding-top: 1em;
@@ -32,8 +32,8 @@ a {
 .food_station {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  max-width: 150px;
+  padding: 5px;
+  max-width: 170px;
 }
 
 .course {
@@ -51,7 +51,7 @@ a {
 }
 
 .veggie_gf {
-  background-color: #c1c1c1;
+  background-color: #91d9e0;
 }
 
 .closed {
