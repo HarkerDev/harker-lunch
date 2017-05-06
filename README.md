@@ -15,4 +15,4 @@ Go to [the Github IO page](http://aggarwalneeraj141.github.io/harker-lunch/) to 
 
 In the provided menu by Harker, certain dishes are marked to be vegetarian, gluten-free, or both.
 
-We use this information to show to the user, by showing color in the table cell for the dish. The classes `.veggie`, `.gf`, and `.veggie_gf` are used to provide a simple color key for the user to identify the dishes respectively.
+We use this information to show to the user, by showing color in the table cell for the dish. The classes `.veggie`, `.gf`, `.veggie_gf`, and `.closed` are used to provide a simple color key for the user to identify the dishes respectively.
