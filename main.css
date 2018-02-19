@@ -19,7 +19,12 @@ a {
 }
 
 .day {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -30,10 +35,15 @@ a {
 }
 
 .food_station {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 5px;
-  max-width: 170px;
+  max-width: 220px;
 }
 
 .course {
@@ -63,7 +73,7 @@ a {
     
     .place {
       height: 2.5em;
-      font-size: 1.25em;  
+      font-size: 1.25em;
     }
     
     h1, h2, h3 {
@@ -85,6 +95,9 @@ a {
   }
 
   .day {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
   }
