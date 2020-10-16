@@ -4,7 +4,7 @@ A simple web application for Harker students to check whats for lunch.
 
 ## Usage
 
-Go to [the Github IO page](http://aggarwalneeraj141.github.io/harker-lunch/) to access the schedule, or [tiny.cc/lunchmenu](https://tiny.cc/lunchmenu).
+Go to [the Github IO page](https://harkerdev.github.io/harker-lunch/) to access the schedule, or [tiny.cc/lunchmenu](https://tiny.cc/lunchmenu).
 
 ## How it works
 
